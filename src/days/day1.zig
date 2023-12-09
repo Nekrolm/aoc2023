@@ -1,4 +1,4 @@
-const input_data = @embedFile("inputs/1.txt");
+const input_data = @embedFile("../inputs/1.txt");
 
 const std = @import("std");
 

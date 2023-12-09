@@ -1,6 +1,6 @@
 const std = @import("std");
 
-const input_data = @embedFile("inputs/2.txt");
+const input_data = @embedFile("../inputs/2.txt");
 
 const Error = error{ Unknown, ParseError };
 
