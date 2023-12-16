@@ -9,6 +9,7 @@ pub const days = [_]*const fn () anyerror!void{
     @import("days/day7.zig").solve,
     @import("days/day8.zig").solve,
     @import("days/day9.zig").solve,
+    @import("days/day10.zig").solve,
 };
 // zig fmt: on
 

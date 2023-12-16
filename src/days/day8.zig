@@ -116,6 +116,7 @@ fn followInstruction2(alloc: std.mem.Allocator, graph: Graph, start: VertexId, i
             instruction_pos = 0;
         }
         if (current[2] == 'Z') {
+            std.debug.print("found {}\n", .{steps});
             try lengths.append(steps);
         }
     }
@@ -195,6 +196,7 @@ pub fn solve() !void {
 
     var lengths = try std.ArrayList(u64).initCapacity(alloc, 3000);
     for (start_nodes.items) |start| {
+        std.debug.print("next loop\n", .{});
         try followInstruction2(alloc, graph, start, instruction, &lengths);
     }
 
