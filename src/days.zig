@@ -11,6 +11,7 @@ pub const days = [_]*const fn () anyerror!void{
     @import("days/day9.zig").solve,
     @import("days/day10.zig").solve,
     @import("days/day11.zig").solve,
+    @import("days/day12.zig").solve,
 };
 // zig fmt: on
 
